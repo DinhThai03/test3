@@ -10,5 +10,7 @@ int tinhHieu(int a, int b);
 
 void main()
 {
-
+	int a = 2, b = 3;
+	tinhTong(2, 3);
+	
 }
