@@ -2,8 +2,11 @@
 
 using namespace std;
 
-int tinhTong(int a, int b);
-int tinhTich(int a, int b);
+int tinhTong(int a, int b)
+int tinhTich(int a, int b)
+{
+	return a * b;
+}
 int tinhHieu(int a, int b){
   return a-b;
 }
@@ -13,11 +16,13 @@ int tinhThuong(int a, int b){
 
 void main()
 {
-cout<<"Nhap a";
-cin>>a;
+	int a, b;
+	cout << "Nhap a: ";
+	cin >> a;
+	cout << "nhap b:";
+	cin >> b;
+	cout<<"Hieu la " << tinhHieu(a,b) << endln;
 
-cout<<"Hieu la " << tinhHieu(a,b) << endln;
-
-cout << "Thuong la: " << tinhThuong(a,b);
-
+	cout << "Thuong la: " << tinhThuong(a,b);
+	cout << "Tich la: " << tinhTich(a, b);
 }
